@@ -151,6 +151,27 @@ const Index = () => {
           overflow: "hidden",
         }}
       >
+        {/* aluminum background image */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage: "url(https://cdn.poehali.dev/projects/5506b00a-69a7-4cdb-9dc6-e9f352c6fc0b/files/a1a2912f-765f-4589-b72d-e981718987cc.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            zIndex: 0,
+            opacity: 0.35,
+          }}
+        />
+        {/* dark overlay */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(135deg, rgba(10,8,20,0.85) 0%, rgba(5,10,25,0.75) 50%, rgba(10,8,20,0.9) 100%)",
+            zIndex: 0,
+          }}
+        />
         {/* animated particle background */}
         <ParticleCanvas />
 
